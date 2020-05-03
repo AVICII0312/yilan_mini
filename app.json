@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/mine/mine",
+    "pages/index/index",
     "pages/goods/search",
     "pages/location/add",
-    "pages/index/index",
     "pages/location/select",
     "pages/login/index",
     "pages/location/mine",

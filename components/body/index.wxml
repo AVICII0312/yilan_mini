@@ -1,7 +1,7 @@
 <!--components/body/index.wxml-->
 <navBar showIcon="{{ showIcon }}" title="{{ title }}" />
 <image class="header-bg" src="/images/header_bg_short.png" wx:if="{{ short }}" />
-<image class="header-bg" src="/images/header_bg_long.png" wx:else />
+<image class="header-bg long" src="/images/header_bg_long.png" wx:else />
 <view class="container" style="top: {{ isIOS ? statusHeight + 48 : statusHeight + 44 }}px;">
   <slot></slot>
 </view>

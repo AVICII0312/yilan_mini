@@ -1,12 +1,11 @@
-/**app.wxss**/
+@import 'utils/iconfont.wxss';
 
 page {
   height: 100vh;
-  background: #F0F5F7;
+  background: #f0f5f7;
 }
 
 view, scroll-view, cover-view, text, button, input, textarea, navigator {
-  color: white;
   font-family: PingFangSC-Medium, PingFang SC;
   letter-spacing: 2rpx;
 }
