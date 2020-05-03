@@ -1,0 +1,10 @@
+<!--components/searchBar/index.wxml-->
+<view class="search-bar">
+  <input
+    class="search-ipt"
+    placeholder="{{ ph }}"
+    placeholder-class="search-ipt-ph"
+    bindinput="inputValue"
+  />
+  <image class="search-icon" src="/images/search.png" bind:tap="search" />
+</view>

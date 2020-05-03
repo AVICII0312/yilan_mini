@@ -1,0 +1,3 @@
+<template name="plus">
+  <view class="plus-content" bind:tap="tapPlus"></view>
+</template>

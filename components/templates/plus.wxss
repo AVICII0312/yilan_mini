@@ -1,0 +1,23 @@
+.plus-content {
+  position: relative;
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  background: #5A387A;
+}
+
+.plus-content::after, .plus-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2rpx;
+  height: 22rpx;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+.plus-content::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}

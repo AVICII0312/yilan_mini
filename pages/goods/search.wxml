@@ -1,0 +1,11 @@
+<!--pages/goods/search.wxml-->
+<Body title="搜索商品">
+  <view class="content">
+    <view class="search">
+      <searchBar ph="请输入商品名称" bind:search="searchGoods" />
+    </view>
+    <view class="goods-list">
+      <goods source="order-list" />
+    </view>
+  </view>
+</Body>

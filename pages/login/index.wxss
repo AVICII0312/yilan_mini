@@ -1,0 +1,64 @@
+/* pages/login/index.wxss */
+
+.login-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  background: #000;
+}
+
+.login-container {
+  position: fixed;
+  top: 340rpx;
+  right: 30rpx;
+  left: 30rpx;
+}
+
+.logo {
+  width: 204rpx;
+  height: 262rpx;
+  margin: 20rpx auto 0 auto;
+}
+
+.logo-text {
+  width: 200rpx;
+  height: 60.2rpx;
+  margin: 32rpx auto 0 auto;
+}
+
+.login-tip {
+  width: 450rpx;
+  height: 156rpx;
+  margin: 62rpx auto 0 auto;
+  text-align: center;
+  line-height: 44rpx;
+}
+
+.tip-title {
+  font-size: 32rpx;
+}
+
+.tip-content {
+  margin-top: 30rpx;
+  font-size: 26rpx;
+}
+
+.btn {
+  width: 690rp;
+  height: 96rpx;
+  padding: 0;
+  margin-top: 100rpx;
+  border-radius: 48rpx;
+  background: linear-gradient(270deg, #A65FCD, #CFA1F9);
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 96rpx;
+}
+
+.btn::after {
+  display: none;
+}

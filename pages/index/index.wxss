@@ -1,0 +1,228 @@
+/**index.wxss**/
+
+@import "../../components/templates/plus.wxss";
+@import "../../components/templates/price.wxss";
+@import "../../components/templates/goods.wxss";
+.content {
+  padding-top: 4rpx;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.region {
+  display: flex;
+  align-items: center;
+}
+
+.region-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.region-text {
+  max-width: 312rpx;
+  margin-left: 18rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+  line-height: 1.1;
+}
+
+.region-select-icon {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 8rpx;
+}
+
+.search {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200rpx;
+  height: 48rpx;
+  background: rgba(255, 255, 255, .25);
+  border-radius: 22rpx;
+  border: 2rpx solid white;
+}
+
+.search-text {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+
+.search-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+}
+
+/* swiper */
+
+.swiper {
+  margin-top: 12rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.swiper, .swiper .swiper-image {
+  width: 690rpx;
+  height: 300rpx;
+  background: #000;
+}
+
+/* sell-well */
+
+.sell-well {
+  position: relative;
+  width: 690rpx;
+  height: 488rpx;
+  margin-top: 40rpx;
+}
+
+.sell-well-bg {
+  width: 690rpx;
+  height: 132rpx;
+}
+
+.sell-well-title {
+  position: absolute;
+  top: 28rpx;
+  left: 16rpx;
+  display: flex;
+  align-items: center;
+}
+
+.sell-title-icon {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.block-title {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.sell-well-title .block-title {
+  margin-left: 18rpx;
+}
+
+.block-split {
+  width: 2rpx;
+  height: 20rpx;
+  margin-left: 18rpx;
+  background: white;
+}
+
+.block-tip {
+  height: 28rpx;
+  font-size: 20rpx;
+  line-height: 28rpx;
+  font-weight: 500
+}
+
+.sell-well-title .block-tip {
+  margin-left: 18rpx;
+}
+
+.sell-well-content {
+  position: absolute;
+  top: 90rpx;
+  left: 0;
+  width: 690rpx;
+  height: 348rpx;
+  padding: 20rpx 0 30rpx 0;
+  border-radius: 10rpx 10rpx 0 0;
+  background: white;
+  white-space: nowrap;
+}
+
+.sell-well-content .goods-item {
+  display: inline-block;
+  width: 180rpx;
+  height: auto;
+  padding: 0;
+  margin-right: 20rpx;
+  border-radius: 0;
+  background: transparent;
+}
+
+.sell-well-content .goods-item:first-child {
+  margin-left: 20rpx;
+}
+
+.sell-well-content .goods-img {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.sell-well-content .goods-title {
+  width: 180rpx;
+  height: 68rpx;
+  margin-top: 26rpx;
+}
+
+.sell-well-content .goods-bottom {
+  margin-top: 6rpx;
+}
+
+.sell-well-content .goods-price {
+  height: 70rpx;
+}
+
+.sell-well-content .price-content, .sell-well-content .price-content-underline {
+  line-height: 1.1;
+}
+
+/* goods */
+
+.goods {
+  position: relative;
+  margin-top: 24rpx;
+}
+
+.goods-bg {
+  width: 690rpx;
+  height: 110rpx;
+}
+
+.goods-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 18rpx;
+  left: 30rpx;
+  height: 90rpx;
+}
+
+.goods-tip {
+  display: flex;
+  align-items: center;
+}
+
+.block-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10rpx;
+}
+
+.goods-list .goods-item:not(:nth-child(-n+2)) {
+  margin-top: 10rpx;
+}

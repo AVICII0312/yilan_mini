@@ -1,0 +1,11 @@
+<!--pages/login/index.wxml-->
+<image class="login-bg" src />
+<view class="login-container">
+  <image class="logo" src="/images/logo.png" />
+  <view class="login-tip">
+    <view class="tip-title">haskap获取以下权限：</view>
+    <view class="tip-content">获取您的公开信息(昵称和头像等)， 以便于获取全面信息</view>
+  </view>
+  <view class="btn" bind:tap="login" wx:if="{{ !phone }}">授权登录</view>
+  <button open-type="getPhoneNumber" class="btn" bindgetphonenumber="getPhone" wx:else>授权手机号</button>
+</view>

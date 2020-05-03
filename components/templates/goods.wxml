@@ -1,0 +1,15 @@
+<import src="../../components/templates/price.wxml"></import>
+<import src="../../components/templates/plus.wxml"></import>
+<template name="itemGoods">
+  <view class="goods-item">
+    <image class="goods-img" src />
+    <view class="goods-title">新鲜蓝莓125g单盒 6盒装</view>
+    <view class="goods-bottom">
+      <view class="goods-price">
+        <template is="priceNormal" data="{{ num: 79 }}"></template>
+        <template is="priceUnderline" data="{{ num: 89 }}"></template>
+      </view>
+      <template is="plus"></template>
+    </view>
+  </view>
+</template>

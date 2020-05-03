@@ -1,0 +1,189 @@
+/* components/goods/index.wxss */
+
+@import "../templates/price.wxss";
+/* common */
+
+.goods-line {
+  display: flex;
+  align-items: center;
+}
+
+.goods-img {
+  width: 140rpx;
+  height: 140rpx;
+  background: #000;
+}
+
+.goods-info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.goods-title {
+  flex: 1;
+  display: -webkit-box;
+  width: 470rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: #333333;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.goods-desc {
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #999999;
+}
+
+.goods-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods-num {
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color: #999999;
+}
+
+.goods-btn {
+  width: 120rpx;
+  height: 40rpx;
+  border-radius: 60rpx;
+  border: 2rpx solid #5A387A;
+  line-height: 40rpx;
+  text-align: center;
+  color: #5A387A;
+  font-size: 20rpx;
+}
+
+/* source === 列表 */
+
+.goods-line.list .goods-other {
+  margin-top: 14rpx;
+}
+
+.goods-line.list .price-unit {
+  padding-right: 4rpx !important;
+  font-size: 24rpx !important;
+}
+
+.goods-line.list .price-num {
+  font-size: 28rpx !important;
+}
+
+/* source === 确认订单 */
+
+.goods-line.order .goods-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.goods-line.order .goods-info {
+  margin-left: 30rpx;
+}
+
+.goods-line.order .goods-title {
+  width: 442rpx;
+  padding-top: 20rpx;
+}
+
+.goods-line.order .goods-desc {
+  margin-top: 18rpx;
+}
+
+.goods-line.order .goods-other {
+  margin-top: 24rpx;
+}
+
+.goods-line.order .price-num.int {
+  font-size: 40rpx !important;
+}
+
+/* source === 订单详情 */
+
+.goods-line.order-detail .goods-img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.goods-line.order-detail .goods-info {
+  margin-left: 20rpx;
+}
+
+.goods-line.order-detail .goods-title {
+  width: 430rpx;
+  padding-top: 10rpx;
+}
+
+.goods-line.order-detail .goods-desc {
+  margin-top: 20rpx;
+}
+
+/* source === 购物车 */
+
+.goods-line.cart .goods-img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.goods-line.cart .goods-title {
+  width: 390rpx;
+}
+
+.goods-line.cart .goods-desc {
+  margin-top: 8rpx;
+}
+
+.goods-line.cart .goods-other {
+  margin-top: 8rpx;
+}
+
+.goods-line.cart .price-unit {
+  padding-right: 4rpx !important;
+  font-size: 24rpx !important;
+}
+
+.goods-line.cart .price-num {
+  font-size: 28rpx !important;
+}
+
+/* source === 收藏 */
+
+.goods-line.collect .goods-title {
+  padding-top: 10rpx;
+}
+
+.goods-line.collect .goods-other {
+  margin-top: 8rpx;
+}
+
+.goods-line.collect .price-unit {
+  padding-right: 4rpx !important;
+  font-size: 24rpx !important;
+}
+
+.goods-line.collect .price-num {
+  font-size: 28rpx !important;
+}
+
+/* source === 订单管理 */
+
+.goods-line.order-list .goods-img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.goods-line.order-list .goods-title {
+  width: 430rpx;
+  padding-top: 10rpx;
+}
+
+.goods-line.order-list .goods-desc {
+  margin-top: 20rpx;
+}

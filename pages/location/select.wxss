@@ -1,0 +1,118 @@
+/* pages/location/select.wxss */
+
+@import "../../components/templates/divButton.wxss";
+.content {
+  margin-top: 14rpx;
+}
+
+/* current */
+
+.location-current {
+  position: relative;
+  width: 690rpx;
+  height: 100rpx;
+  margin-top: 18rpx;
+}
+
+.location-current-bg {
+  width: 690rpx;
+  height: 100rpx;
+}
+
+.location-current-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.current-container {
+  margin: 16rpx 30rpx;
+}
+
+.current-tip {
+  font-size: 20rpx;
+  line-height: 28rpx;
+  color: #999999;
+}
+
+.current-val {
+  padding-top: 4rpx;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: #5A387A;
+}
+
+.current-btn {
+  display: flex;
+  align-items: center;
+  margin: 34rpx 30rpx;
+}
+
+.current-btn-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.current-btn-text {
+  margin-left: 6rpx;
+  font-size: 20rpx;
+  line-height: 28rpx;
+}
+
+/* list receipt, list nearby */
+
+.location-list {
+  width: 690rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+
+.location-list-tip {
+  padding: 20rpx 0 14rpx 30rpx;
+  color: #999999;
+  font-size: 20rpx;
+  line-height: 28rpx;
+}
+
+.location-list-item {
+  padding: 16rpx 30rpx 32rpx 30rpx;
+}
+
+.location-list .location-list-item~.location-list-item {
+  border-top: 2rpx solid #DEDEDE;
+}
+
+.item-val {
+  color: #333333;
+  font-size: 26rpx;
+  line-height: 36rpx;
+}
+
+.item-remarks {
+  margin-top: 6rpx;
+  color: #999999;
+  font-size: 20rpx;
+  line-height: 28rpx;
+}
+
+.item-nickname, .item-phone, .item-detailed {
+  color: #999999;
+}
+
+.item-phone {
+  padding-left: 30rpx;
+}
+
+/* button */
+
+.div-button-gradient {
+  position: fixed;
+  left: 30rpx;
+  bottom: 20rpx;
+}

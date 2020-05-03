@@ -1,0 +1,16 @@
+/**app.wxss**/
+
+page {
+  height: 100vh;
+  background: #F0F5F7;
+}
+
+view, scroll-view, cover-view, text, button, input, textarea, navigator {
+  color: white;
+  font-family: PingFangSC-Medium, PingFang SC;
+  letter-spacing: 2rpx;
+}
+
+image, cover-image {
+  display: block;
+}

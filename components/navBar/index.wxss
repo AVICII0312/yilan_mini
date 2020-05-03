@@ -1,0 +1,23 @@
+/* components/navBar/index.wxss */
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.nav-icon {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.nav-title {
+  font-weight: 500;
+  font-size: 18px;
+}

@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<import src="../../components/templates/goods.wxml"></import>
+<Body title="伊蓝商城" short="{{ false }}" showIcon="{{ false }}">
+  <view class="content">
+    <!-- header -->
+    <view class="header">
+      <navigator hover-class="none" class="region" url="/pages/location/select">
+        <image class="region-icon" src="/images/region.png" />
+        <view class="region-text">北京市丰台区汉威国际广场</view>
+        <image class="region-select-icon" src="/images/region_select.png" />
+      </navigator>
+      <navigator hover-class="none" class="search" url>
+        <view class="search-text">搜索</view>
+        <image class="search-icon" src="/images/search.png" />
+      </navigator>
+    </view>
+    <!-- swiper -->
+    <swiper autoplay="{{ true }}" interval="{{ 5000 }}" duration="{{ 500 }}" class="swiper">
+      <swiper-item class="swiper-item">
+        <image class="swiper-image" src="{{ item }}" />
+      </swiper-item>
+    </swiper>
+    <!-- sell-well -->
+    <view class="sell-well">
+      <image class="sell-well-bg" src="/images/sell_well.png" />
+      <view class="sell-well-title">
+        <image class="sell-title-icon" src="/images/sell_well_icon.png" />
+        <view class="block-title">热销产品</view>
+        <view class="block-split"></view>
+        <view class="block-tip">大家都在买</view>
+      </view>
+      <scroll-view scroll-x="{{ true }}" class="sell-well-content">
+        <!-- goods item -->
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+      </scroll-view>
+    </view>
+    <!-- goods -->
+    <view class="goods">
+      <image class="goods-bg" src="/images/goods.png" />
+      <view class="goods-header">
+        <view class="block-title">其他产品</view>
+        <view class="goods-tip">
+          <view class="block-tip">查看更多</view>
+          <image class="block-icon" src="/images/more.png" />
+        </view>
+      </view>
+      <view class="goods-list">
+        <!-- goods item -->
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+        <template is="itemGoods"></template>
+      </view>
+    </view>
+  </view>
+</Body>

@@ -1,0 +1,24 @@
+<wxs module="n">
+  function toNum(str) {
+  return Number(str).toFixed(2).split('.');
+  }
+  module.exports = {
+  toNum: toNum
+  }
+</wxs>
+<template name="priceNormal">
+  <view class="price-content">
+    <text class="price-unit">¥</text>
+    <text class="price-num int">{{ n.toNum(num)[0] }}</text>
+    <text class="price-num">.{{ n.toNum(num)[1] }}</text>
+  </view>
+</template>
+<template name="priceUnderline">
+  <view class="price-content-underline">
+    <text class="price-underline">
+      <text class="price-unit">¥</text>
+      <text class="price-num int">{{ n.toNum(num)[0] }}</text>
+      <text class="price-num">.{{ n.toNum(num)[1] }}</text>
+    </text>
+  </view>
+</template>

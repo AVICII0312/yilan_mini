@@ -1,0 +1,36 @@
+.div-button-gradient, .div-button-blue, .div-button-purple, .div-button-border {
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.div-button-gradient {
+  width: 690rpx;
+  height: 96rpx;
+  border-radius: 48rpx;
+  background: linear-gradient(90deg, rgba(166, 95, 205, 1) 0%, rgba(100, 60, 137, 1) 100%);
+  line-height: 96rpx;
+}
+
+.div-button-blue {
+  width: 320rpx;
+  height: 72rpx;
+  border-radius: 36px;
+  background: #6278B9;
+  line-height: 72rpx;
+}
+
+.div-button-purple {
+  width: 320rpx;
+  height: 72rpx;
+  border-radius: 36px;
+  background: #5A387A;
+  line-height: 72rpx;
+}
+
+.div-button-border {
+  width: 240rpx;
+  height: 72rpx;
+  border-radius: 36prx;
+  border: 2rpx solid #5A387A;
+  color: #5A387A;
+}

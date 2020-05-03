@@ -1,0 +1,14 @@
+<!--components/goods/index.wxml-->
+<import src="../../components/templates/price.wxml"></import>
+<view class="goods-line {{ source }}">
+  <image class="goods-img" src />
+  <view class="goods-info">
+    <view class="goods-title">新鲜水果蓝莓云南应季京东生鲜大礼物非智利</view>
+    <view class="goods-desc" wx:if="{{ source !== 'list' && source !== 'collect' }}">大包装精品礼盒，和满足4人食用</view>
+    <view class="goods-other" wx:if="{{ source !== 'order-detail' && source !== 'order-list' }}">
+      <template is="priceNormal" data="{{ num: 79 }}"></template>
+      <view class="goods-btn" bind:tap="uncollect" wx:if="{{ source === 'collect' }}">取消收藏</view>
+      <view class="goods-num" wx:elif="{{ source !== 'list' }}">x1</view>
+    </view>
+  </view>
+</view>

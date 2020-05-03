@@ -1,0 +1,70 @@
+/* goods item */
+
+.goods-item {
+  width: 300rpx;
+  height: 466rpx;
+  padding: 20rpx;
+  padding-bottom: 34rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+
+.goods-item .goods-img {
+  width: 300rpx;
+  height: 300rpx;
+  background: #000;
+}
+
+.goods-item .goods-title {
+  display: -webkit-box;
+  width: 300rpx;
+  height: 68rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #333333;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.goods-item .goods-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.goods-item .goods-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-item .price-unit {
+  font-size: 20rpx;
+}
+
+.goods-item .price-content {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.goods-item .price-content-underline {
+  top: -4rpx;
+  line-height: 24rpx;
+}
+
+.goods-item .price-content .price-num {
+  font-size: 28rpx !important;
+}
+
+.goods-item .price-content-underline .price-num {
+  font-size: 20rpx !important;
+}
+
+.goods-item .price-content-underline {
+  position: relative;
+  top: -10rpx;
+}

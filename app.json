@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/goods/search",
+    "pages/location/add",
+    "pages/index/index",
+    "pages/location/select",
+    "pages/login/index",
+    "pages/location/mine",
+    "pages/goods/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#F0F5F7"
+  },
+  "usingComponents": {
+    "Body": "/components/body/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,12 @@
+<template name="divButtonGradient">
+  <view class="div-button-gradient" bind:tap="tapButtonGradient">{{ title }}</view>
+</template>
+<template name="divButtonBlue">
+  <view class="div-button-blue" bind:tap="tapButtonBlue">{{ title }}</view>
+</template>
+<template name="divButtonPurple">
+  <view class="div-button-purple" bind:tap="tapButtonPurple">{{ title }}</view>
+</template>
+<template name="divButtonBorder">
+  <view class="div-button-border" bind:tap="tapButtonBorder">{{ title }}</view>
+</template>

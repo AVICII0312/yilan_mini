@@ -1,0 +1,72 @@
+<!--pages/location/select.wxml-->
+<import src="../../components/templates/divButton.wxml"></import>
+<Body title="选择收货地址">
+  <view class="content">
+    <searchBar ph="输入收货地址" bind:search="getSearch" />
+    <!-- current -->
+    <view class="location-current">
+      <image class="location-current-bg" src="/images/location_current_bg.png" />
+      <view class="location-current-content">
+        <view class="current-container">
+          <view class="current-tip">当前定位</view>
+          <view class="current-val">北京市丰台区汉威国际广场</view>
+        </view>
+        <view class="current-btn">
+          <image class="current-btn-icon" src="/images/location_current_btn.png" />
+          <view class="current-btn-text">重新定位</view>
+        </view>
+      </view>
+    </view>
+    <!-- list receipt -->
+    <view class="location-list">
+      <view class="location-list-tip">收货地址</view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区1号楼6M</view>
+        <view class="item-remarks">
+          <text class="item-nickname">haskap女士</text>
+          <text class="item-phone">18611117645</text>
+        </view>
+      </view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区1号楼6M</view>
+        <view class="item-remarks">
+          <text class="item-nickname">haskap女士</text>
+          <text class="item-phone">18611117645</text>
+        </view>
+      </view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区1号楼6M</view>
+        <view class="item-remarks">
+          <text class="item-nickname">haskap女士</text>
+          <text class="item-phone">18611117645</text>
+        </view>
+      </view>
+    </view>
+    <!-- list nearby -->
+    <view class="location-list">
+      <view class="location-list-tip">收货地址</view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区</view>
+        <view class="item-remarks">
+          <text class="item-detailed">北京市丰台区内环西路</text>
+        </view>
+      </view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区</view>
+        <view class="item-remarks">
+          <text class="item-detailed">北京市丰台区内环西路</text>
+        </view>
+      </view>
+      <view class="location-list-item">
+        <view class="item-val">汉威国际广场二区</view>
+        <view class="item-remarks">
+          <text class="item-detailed">北京市丰台区内环西路</text>
+        </view>
+      </view>
+    </view>
+    <!-- button -->
+    <navigator hover-class="none" url="/pages/location/add">
+      <template is="divButtonGradient" data="{{ title: '新增地址' }}"></template>
+    </navigator>
+  </view>
+</Body>

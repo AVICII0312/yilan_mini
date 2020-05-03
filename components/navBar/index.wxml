@@ -1,0 +1,6 @@
+<!--components/navBar/index.wxml-->
+<cover-view class="nav-bar" style="height: {{ isIOS ? statusHeight + 48 : statusHeight + 44 }}px;">
+  <cover-view class="nav-status" style="height: {{ statusHeight }}px;"></cover-view>
+  <cover-image class="nav-icon" src="/images/corner.png" wx:if="{{ showIcon }}" bind:tap="tapIcon" />
+  <cover-view class="nav-title" style="line-height: {{ isIOS ? 48 : 44 }}px;">{{ title }}</cover-view>
+</cover-view>
