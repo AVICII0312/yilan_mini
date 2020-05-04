@@ -1,13 +1,20 @@
 {
   "pages": [
+    "pages/account/account",
+    "pages/feedback/feedback",
+    "pages/address/address",
+    "pages/collect/collect",
+    "pages/coupon/coupon",
     "pages/mine/mine",
+    "pages/inform/inform",
     "pages/index/index",
     "pages/goods/search",
     "pages/location/add",
     "pages/location/select",
     "pages/login/index",
     "pages/location/mine",
-    "pages/goods/detail"
+    "pages/goods/detail",
+    "pages/address/add"
   ],
   "window": {
     "backgroundTextStyle": "light",
