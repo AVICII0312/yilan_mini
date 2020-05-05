@@ -1,0 +1,62 @@
+<Body title="{{select?'我的优惠券':'选择优惠券'}}" short="{{ true }}" showIcon="{{ true }}">
+    <view class="section" wx:for="{{3}}">
+        <view class="bg">
+            <view class="top">
+                <view class="left_top"></view>
+                <view class="right_top"></view>
+            </view>
+            <view class="bottom">
+                <view class="left_bottom"></view>
+                <view class="right_bottom"></view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content_top">
+                <view class="left">
+                    <view class="title">商品优惠券</view>
+                    <view class="subtitle">满¥80.00可以使用</view>
+                </view>
+                <view class="right">
+                    <image class="label" src="/images/{{active==index?'coupon_label_active':'coupon_label'}}.png" />
+                    <view class="price">
+                        <text>￥</text>
+                        9.00
+                    </view>
+                </view>
+            </view>
+            <view class="line"></view>
+            <view class="content_bottom">
+                <view class="time">有效期至2020年10月31日</view>
+                <view class="button">即将过期</view>
+            </view>
+        </view>
+    </view>
+    <view class="section overdue">
+        <view class="bg">
+            <view class="top">
+                <view class="left_top"></view>
+                <view class="right_top"></view>
+            </view>
+            <view class="bottom">
+                <view class="left_bottom"></view>
+                <view class="right_bottom"></view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content_top">
+                <view class="left">
+                    <view class="title">商品优惠券</view>
+                    <view class="subtitle">满¥80.00可以使用</view>
+                </view>
+                <view class="price">
+                    <text>￥</text>
+                    9.00
+                </view>
+            </view>
+            <view class="line"></view>
+            <view class="content_bottom">
+                <view class="time">有效期至2020年10月31日</view>
+            </view>
+        </view>
+    </view>
+</Body>

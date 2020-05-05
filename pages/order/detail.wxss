@@ -1,0 +1,341 @@
+.status {
+    margin: 20rpx 0 14rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 30rpx;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+.card .icon {
+    margin-right: 38rpx;
+    flex-shrink: 0;
+    width: 64rpx;
+    height: 64rpx;
+
+}
+
+.card .title {
+    font-size: 26rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333;
+}
+
+.card .subtitle {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999;
+}
+
+.container {
+    padding: 30rpx;
+    margin-top: 10rpx;
+    border-radius: 10rpx;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.container .info {
+    padding: 20rpx 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid #dedede;
+}
+
+.container .info .thumb {
+    margin-right: 20rpx;
+    width: 160rpx;
+    height: 160rpx;
+    border: 1rpx solid #5A387a;
+}
+
+.container .info .title {
+    width: 430rpx;
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #333;
+    word-break: break-all;
+}
+
+.container .info .subtitle {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #999;
+}
+
+.container .info .unit_price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 40rpx;
+
+}
+
+.container .info .unit_price .name {
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333;
+}
+
+.container .info .unit_price .num {
+    font-size: 28rpx;
+
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.container .info .unit_price .num text {
+    font-size: 24rpx;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: #FF2B2B;
+}
+
+.container .total_group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20rpx;
+}
+
+.container .total_group .num {
+    margin-right: 46rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.container .total_group .part {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #333;
+}
+
+.container .total_group .price {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.container .total_group .price text {
+    font-size: 24rpx;
+    color: #FF2B2B;
+}
+
+.container .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17rpx 0;
+    margin-top: 13rpx;
+    font-size: 26rpx;
+    font-weight: 400;
+}
+
+.container .section .name {
+    color: #333;
+}
+
+.container .section .detail {
+    color: #999;
+}
+
+.container .section .discounts {
+    color: #FF0000;
+}
+
+.card .describe {
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #999;
+    line-height: 40rpx;
+}
+
+.box_shadow {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_button {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20rpx 30rpx;
+    background: #fff;
+}
+
+.footer_button .button {
+    padding: 16rpx 104rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #fff;
+    background: #5A387A;
+    border-radius: 36rpx;
+}
+
+.shade {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+}
+
+.shade .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 750rpx;
+    height: 1000rpx;
+    background: #fff;
+    border-radius: 20rpx;
+}
+
+.shade .popup .close {
+    position: absolute;
+    top: 26rpx;
+    right: 30rpx;
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.shade .popup .evaluate {
+    margin-top: 256rpx;
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.shade .popup .text {
+    margin-top: 50rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #5A387A;
+}
+
+.shade .popup .button_corne {
+    margin-top: 340rpx;
+    padding: 20rpx 104rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #5A387A;
+    border: 2rpx solid #5A387A;
+    border-radius: 40rpx;
+}
+
+.shade .popup .goods {
+    display: flex;
+    align-items: center;
+    margin-top: 106rpx;
+}
+
+.shade .popup .goods-img {
+    width: 140rpx;
+    height: 140rpx;
+    background: #000;
+}
+
+.shade .popup  .goods-info {
+    flex: 1;
+    margin-left: 20rpx;
+}
+
+.shade .popup .goods-title {
+    flex: 1;
+    display: -webkit-box;
+    width: 480rpx;
+    overflow: hidden;
+    font-size: 26rpx;
+    line-height: 36rpx;
+    color: #333333;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.shade .popup .goods-desc {
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #999999;
+}
+.shade .popup .pay_price{
+    margin-top: 66rpx;
+    font-size: 48rpx;
+    font-weight: 500;
+    color: #333;
+}
+.shade .popup .pay_price text{
+    font-size: 24rpx;
+}
+.shade .popup .discounts{
+    margin-top: 14rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #999;
+}
+.shade .popup .discounts text{
+    font-size: 20rpx;
+}
+.shade .popup .img_group{
+    display: flex;
+    align-items: center;   
+    margin-top: 86rpx;
+}
+.shade .popup .img_group .star_icon{
+    margin-left: 56rpx;
+    width: 44rpx;
+    height: 44rpx;
+}
+.shade .popup .img_group .star_icon:first-child{
+    margin: 0;
+}
+.shade .popup .evaluation_grade{
+    margin-top: 32rpx;
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #5A387A;
+}
+.shade .popup .textarea{
+    margin-top: 44rpx;
+    padding: 20rpx 30rpx;
+   width: 690rpx;
+   height: 162rpx;
+   font-size: 26rpx;
+   font-weight: 500;
+   color: #999;
+   background: #f0f0f0;
+   border-radius: 4rpx;
+   box-sizing: border-box;
+} 
+.shade .popup .publish{
+    margin-top: 38rpx;
+    padding: 20rpx 104rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #fff;
+    background: #5A387A;
+    border-radius: 40rpx;
+
+}

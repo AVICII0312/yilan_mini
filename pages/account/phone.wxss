@@ -1,0 +1,47 @@
+@import "../../components/templates/divButton.wxss";
+
+.container {
+    padding: 0 30rpx;
+    margin-bottom: 40rpx;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx 0;
+    border-bottom: 2rpx solid #dedede;
+}
+
+.section:last-child {
+    border: none;
+}
+
+.section .name {
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #333;
+}
+
+.section .input {
+    flex: 1;
+    font-size: 26rpx;
+    font-weight: 400;
+    text-align: right;
+    color: #999;
+}
+
+.section .send {
+    padding: 10rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+    background: #f0f0f0;
+    border-radius: 10rpx;
+}
+
+.button {
+    color: #fff;
+}

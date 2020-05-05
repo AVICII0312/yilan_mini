@@ -1,0 +1,90 @@
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #fff;
+}
+
+.head .count {}
+
+.head .clear {
+    display: flex;
+    align-items: center;
+}
+
+.head .clear .icon {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 10rpx;
+}
+
+.content {
+    padding: 10rpx 30rpx 0;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+.content .section {
+    display: flex;
+    align-items: center;
+    padding: 30rpx 0;
+    border-bottom: 2rpx solid #dedede;
+}
+
+.content .section:last-child {
+    border: none;
+}
+
+.content .section .via {
+    margin-right: 28rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    background: rgba(90, 56, 122, 0.2);
+}
+
+.content .main {
+    flex: 1;
+}
+
+.content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.content .top .title {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.content .top .time {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.content .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rpx;
+}
+
+.content .bottom .subtitle {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.content .bottom .badge {
+    width: 12rpx;
+    height: 12rpx;
+    background: linear-gradient(180deg, rgba(255, 128, 128, 1) 0%, rgba(255, 43, 43, 1) 100%);
+    border-radius: 6rpx;
+}

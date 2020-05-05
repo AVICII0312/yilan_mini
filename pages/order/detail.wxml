@@ -1,0 +1,89 @@
+<Body title="我的订单" short="{{ true }}" showIcon="{{ true }}">
+    <view class="status">待收货</view>
+    <view class="card">
+        <image class="icon" src="/images/address_order_icon.png" />
+        <view>
+            <view class="title">
+                Mr. HASKAP
+                <text>186****7654</text>
+            </view>
+            <view class="subtitle">北京市丰台区四环到五环之间南四环西路捍卫国际广场2区1号楼6M</view>
+        </view>
+    </view>
+    <view class="box_shadow">
+        <view class="container">
+            <view class="info">
+                <image class="thumb" />
+                <view>
+                    <view class="title">新鲜水果蓝莓云南应季京东生鲜大礼物非智利蓝莓</view>
+                    <view class="subtitle">大包装精品礼盒，和满足4人食用</view>
+                    <view class="unit_price">
+                        <view class="name">小计：</view>
+                        <view class="num">
+                            <text>￥</text>
+                            79.00
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="section">
+                <view class="name">配送方式</view>
+                <view class="detail">快递包邮</view>
+            </view>
+            <view class="section">
+                <view class="name">优惠券</view>
+                <view class="discounts">-￥9.00</view>
+            </view>
+            <view class="total_group">
+                <view class="num">共1件</view>
+                <view class="part">小计：</view>
+                <view class="price">
+                    <text>￥</text>
+                    79.00
+                </view>
+            </view>
+        </view>
+        <view class="card">
+            <text class="describe">订单编号：N202004151550001 \n 下单时间：2020.04.15</text>
+        </view>
+    </view>
+    <view class="footer_button">
+        <view class="button">确认收货</view>
+    </view>
+    <view class="shade">
+        <view class="popup">
+            <image class="close" src="/images/close_icon.png"></image>
+            <block wx:if="{{done}}">
+                <image src="/images/evaluate_icon.png" class="evaluate" />
+                <view class="text">评价成功</view>
+                <view class="button_corne">返回首页</view>
+            </block>
+            <block wx:else>
+                <view class="goods">
+                    <image class="goods-img" src />
+                    <view class="goods-info">
+                        <view class="goods-title">新鲜水果蓝莓云南应季京东生鲜大礼物非智利</view>
+                        <view class="goods-desc" wx:if="{{ source !== 'list' && source !== 'collect'&&source!=='mine' }}">
+                            大包装精品礼盒，和满足4人食用
+                        </view>
+                    </view>
+                </view>
+                <view class="pay_price">
+                    <text>￥</text>
+                    80.00
+                </view>
+                <view class="discounts">
+                    已使用优惠券抵扣
+                    <text>￥</text>
+                    9.00
+                </view>
+                <view class="img_group">
+                    <image class="star_icon" src="/images/{{evaluate>index?'star_icon_active':'star_icon'}}.png" wx:for="{{5}}" />
+                </view>
+                <view class="evaluation_grade">比较满意</view>
+                <textarea class="textarea" placeholder-class="textarea-placeholder" placeholder="亲，说说您的想法或者意见吧！"></textarea>
+                <view class="publish">发布评价</view>
+            </block>
+        </view>
+    </view>
+</Body>

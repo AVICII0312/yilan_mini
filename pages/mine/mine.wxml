@@ -1,0 +1,92 @@
+<Body title="我的" short="{{ false }}" showIcon="{{ false }}">
+    <view class="header">
+        <image class="via" src="/images/no_via.png" />
+        <view class="content">
+            <view class="title">点击登录/注册</view>
+            <view class="subtitle">186****7654</view>
+        </view>
+        <view class="group">
+            <image class="inform" src="/images/inform.png">
+                <view class="badge"></view>
+            </image>
+            <view class="setting">
+                <image class="set" src="/images/set.png" />
+                <view>账号设置</view>
+            </view>
+        </view>
+    </view>
+    <view class="section">
+        <view class="head">
+            <view class="title">订单管理</view>
+            <view class="subtitle">
+                <view>查看全部订单</view>
+                <view class="iconfont icon-jiantou"></view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="option">
+                <image class="icon" src="/images/order_pay.png" />
+                <view class="title">待支付</view>
+            </view>
+            <view class="option">
+                <image class="icon" src="/images/order_send.png" />
+                <view class="title">待发货</view>
+            </view>
+            <view class="option">
+                <image class="icon" src="/images/order_receive.png" />
+                <view class="title">待收货</view>
+            </view>
+            <view class="option">
+                <image class="icon" src="/images/order_evaluate.png" />
+                <view class="title">待评价</view>
+            </view>
+        </view>
+    </view>
+    <view class="section">
+        <view class="head">
+            <view class="title">我的收藏</view>
+            <view class="subtitle">
+                <view>查看全部收藏</view>
+                <view class="iconfont icon-jiantou"></view>
+            </view>
+        </view>
+        <view class="no_collect" wx:if="{{goods}}">
+            <image src="/images/no_collect.png" />
+            <view class="explain">还没有收藏的商品， 快去商城看看吧！</view>
+        </view>
+        <view class="goods_group">
+            <view class="good">
+                <goods source="mine"></goods>
+            </view>
+            <view class="good">
+                <goods source="mine"></goods>
+            </view>
+            <view class="good">
+                <goods source="mine"></goods>
+            </view>
+        </view>
+    </view>
+    <view class="section_group">
+        <view class="row">
+            <view class="title">
+                <image class="icon" src="/images/coupon_icon.png" />
+                <view class="name">我的优惠券</view>
+            </view>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+        <view class="row">
+            <view class="title">
+                <image class="icon" src="/images/address_icon.png" />
+                <view class="name">地址管理</view>
+            </view>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+        <view class="row">
+            <view class="title">
+                <image class="icon" src="/images/feedback_icon.png" />
+                <view class="name">问题反馈</view>
+            </view>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+    </view>
+</Body>

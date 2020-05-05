@@ -1,0 +1,50 @@
+<Body title="我的消息" short="{{ true }}" showIcon="{{ true }}">
+    <view class="head">
+        <view class="count">4条未读消息</view>
+        <view class="clear">
+            <image class="icon" src="/images/clear_icon.png" />
+            <view>清除未读</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="section">
+            <image class="via" src="" />
+            <view class="main">
+                <view class="top">
+                    <view class="title">系统通知</view>
+                    <view class="time">04.15</view>
+                </view>
+                <view class="bottom">
+                    <view class="subtitle">您收藏的蓝莓浆果降价了</view>
+                    <view class="badge"></view>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <image class="via" src="" />
+            <view class="main">
+                <view class="top">
+                    <view class="title">系统通知</view>
+                    <view class="time">04.15</view>
+                </view>
+                <view class="bottom">
+                    <view class="subtitle">您收藏的蓝莓浆果降价了</view>
+                    <view class="badge"></view>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <image class="via" src="" />
+            <view class="main">
+                <view class="top">
+                    <view class="title">系统通知</view>
+                    <view class="time">04.15</view>
+                </view>
+                <view class="bottom">
+                    <view class="subtitle">您收藏的蓝莓浆果降价了</view>
+                    <view class="badge"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</Body>

@@ -1,0 +1,10 @@
+<import src="../../components/templates/divButton.wxml"></import>
+<Body title="问题反馈" short="{{ true }}" showIcon="{{ true }}">
+    <textarea value="{{content}}" data-info="content" class="textarea" placeholder-class="textarea-placeholder" placeholder="写下您的意见或建议" disable-default-padding="{{true}}" bindinput="inputChange"></textarea>
+    <view class="tips">
+        <text>每一条反馈我们都会认真对待、反馈。\n我们将定期选出优秀反馈意见，赠送礼品哦~</text>
+    </view>
+    <navigator class="button" hover-class="none" url="./add">
+        <template is="divButtonGradient" data="{{ title: '确认提交' }}"></template>
+    </navigator>
+</Body>

@@ -1,0 +1,63 @@
+@import "../../components/templates/divButton.wxss";
+
+.container {
+  padding-bottom: 120rpx;
+}
+
+.section {
+  margin-bottom: 10rpx;
+  padding: 30rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.section .title {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.section .title text {
+  margin-left: 40rpx;
+}
+
+.section .content {
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+  border-bottom: 2rpx solid #dedede;
+}
+
+.section .button_group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18rpx 8rpx 0;
+}
+
+.section .button_group .option {
+  display: flex;
+  align-items: center;
+  margin-left: 58rpx;
+}
+
+.section .button_group .option .name {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #666;
+}
+
+.section .button_group .option .icon {
+  margin-right: 14rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.button {
+  position: fixed;
+  left: 30rpx;
+  bottom: 20rpx;
+  color: #fff;
+}

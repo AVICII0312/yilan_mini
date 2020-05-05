@@ -1,0 +1,25 @@
+<import src="../../components/templates/divButton.wxml"></import>
+<Body title="地址管理" short="{{ true }}" showIcon="{{ true }}">
+    <view class="container">
+    <view class="section" wx:for="{{10}}">
+        <view class="title">
+            Mr. HASKAP
+            <text>186****7654</text>
+        </view>
+        <view class="content">北京市丰台区四环到五环之间南四环西路捍卫国际广场2区1号楼6M</view>
+        <view class="button_group">
+            <view class="option">
+                <image class="icon" src="/images/edit_icon.png" />
+                <view class="name">编辑</view>
+            </view>
+            <view class="option">
+                <image class="icon" src="/images/delete_icon.png" />
+                <view class="name">删除</view>
+            </view>
+        </view>
+    </view>
+    </view>
+    <navigator class="button" hover-class="none" url="./add">
+        <template is="divButtonGradient" data="{{ title: '新增地址' }}"></template>
+    </navigator>
+</Body>

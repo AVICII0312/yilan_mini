@@ -1,0 +1,56 @@
+ /**index.wxss**/
+
+ @import "../../components/templates/plus.wxss";
+ @import "../../components/templates/price.wxss";
+ @import "../../components/templates/goods.wxss";
+
+ .goods_group {
+     padding: 0 30rpx;
+     background: #fff;
+     border-radius: 10rpx;
+ }
+
+ .goods_group .good {
+     padding: 30rpx 0;
+
+ }
+
+ /* goods */
+
+ .goods {
+     position: relative;
+     margin-top: 24rpx;
+ }
+
+ .goods-bg {
+     width: 690rpx;
+     height: 110rpx;
+ }
+
+ .goods-header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 0;
+     right: 18rpx;
+     left: 30rpx;
+     height: 90rpx;
+ }
+
+ .block-title {
+     font-size: 28rpx;
+     font-weight: 500;
+     color: #fff;
+ }
+
+ .goods-list {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-bottom: 10rpx;
+ }
+
+ .goods-list .goods-item:not(:nth-child(-n+2)) {
+     margin-top: 10rpx;
+ }

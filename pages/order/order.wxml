@@ -1,0 +1,36 @@
+<Body title="我的订单" short="{{ true }}" showIcon="{{ true }}">
+    <view class="tabs">
+        <image class="tabs_bg" src="/images/tabs_bg.png" />
+        <view class="item_group">
+            <view class="item {{index==currentTab?'active':''}}" wx:for="{{items}}" data-current="{{index}}" bindtap="tabsChange">
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <view class="section" wx:for="{{6}}">
+            <view class="main">
+                <view class="info">
+                    <image class="thumb" />
+                    <view>
+                        <view class="title">新鲜水果蓝莓云南应季京东生鲜大礼物非智利蓝莓</view>
+                        <view class="subtitle">大包装精品礼盒，和满足4人食用</view>
+                    </view>
+                </view>
+                <view class="total_group">
+                    <view class="num">共1件</view>
+                    <view class="part">小计：</view>
+                    <view class="price">
+                        <text>￥</text>79.00</view>
+                </view>
+            </view>
+            <view class="control">
+                <view class="status">待付款</view>
+                <view class="button_group">
+                    <view class="secondary">取消订单</view>
+                    <view class="primary">微信支付</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</Body>

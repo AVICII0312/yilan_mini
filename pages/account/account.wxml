@@ -1,0 +1,41 @@
+<import src="../../components/templates/divButton.wxml"></import>
+
+<Body title="账号设置" short="{{ true }}" showIcon="{{ true }}">
+    <view class="container">
+        <view class="head">
+            <image class="via" />
+            <view class="title">点击修改头像</view>
+        </view>
+        <view class="section">
+            <view class="name">用户名</view>
+            <input type="text" class="input" data-info="name" bindinput="inputChange" />
+        </view>
+        <view class="section">
+            <view class="name">性别</view>
+            <radio-group class="radio-group" bindchange="radioChange">            
+                <radio class="radio" wx:for-items="{{items}}" wx:key="gender" value="{{item.name}}" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+        <view class="section">
+            <view class="name">职业</view>
+            <input type="text" class="input" data-info="job" bindinput="inputChange" />
+        </view>
+    </view>
+    <view class="container">
+        <view class="section">
+            <view class="title">
+                <image src="/images/safety_icon.png" class="icon" />
+                <view class="name">账号安全</view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="name">修改手机号</view>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+    </view>
+    <navigator class="button" hover-class="none" >
+        <template is="divButtonGradient" data="{{ title: '确认并保存' }}"></template>
+    </navigator>
+</Body>

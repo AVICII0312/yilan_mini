@@ -1,0 +1,130 @@
+@import "../../components/templates/divButton.wxss";
+
+.container {
+    padding: 0 30rpx;
+    margin-bottom: 20rpx;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40rpx 0 46rpx;
+    border-bottom: 2rpx solid #dedede;
+
+}
+
+.head .via {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 80rpx;
+    border: 2rpx solid rgba(90, 56, 122, 1);
+}
+
+.head .title {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #333;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx 0;
+    border-bottom: 2rpx solid #dedede;
+}
+
+.section:last-child {
+    border: none;
+}
+
+.section .name {
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #333;
+}
+
+.section .input {
+    flex: 1;
+    font-size: 26rpx;
+    font-weight: 400;
+    text-align: right;
+    color: #999;
+}
+
+.section .radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.section .radio {
+    display: flex;
+    align-items: center;
+    margin-left: 72rpx;
+}
+
+.section .radio text {
+    margin-left: 14rpx;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.section .title {
+    display: flex;
+    align-items: center;
+
+}
+
+.section .title .icon {
+    margin-right: 14rpx;
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.section .title .name {
+    font-size: 28rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333;
+}
+
+.section .iconfont {
+    color: #ccc;
+}
+
+radio .wx-radio-input {
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+    border-color: #5A387A !important;
+    background: #5A387A !important;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    text-align: center;
+    font-size: 16rpx;
+    color: #fff;
+    background: transparent;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.button {
+    position: fixed;
+    left: 30rpx;
+    bottom: 20rpx;
+    color: #fff;
+}

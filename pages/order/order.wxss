@@ -1,0 +1,137 @@
+.tabs {
+    position: relative;
+    width: 690rpx;
+    height: 100rpx;
+}
+
+.tabs .tabs_bg {
+    width: 690rpx;
+    height: 100rpx;
+}
+
+.tabs .item_group {
+    display: flex;
+    align-items: center;
+    padding: 32rpx 30rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.tabs .item_group .item {
+    margin-right: 36rpx;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #666;
+}
+
+.tabs .item_group .item.active {
+    color: #5A387A;
+}
+
+.section {
+    margin-top: 20rpx;
+    padding: 0 30rpx;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+.section .main {
+    padding: 46rpx 0 26rpx;
+    border-bottom: 2rpx solid #dedede;
+}
+
+.section .main .info {
+    display: flex;
+    align-items: center;
+}
+
+.section .main .info .thumb {
+    margin-right: 20rpx;
+    width: 160rpx;
+    height: 160rpx;
+    border: 1rpx solid #5A387a;
+}
+
+.section .main .info .title {
+    width: 430rpx;
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #333;
+    word-break: break-all;
+}
+
+.section .main .info .subtitle {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #999;
+}
+
+.section .main .total_group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20rpx;
+}
+
+.section .main .total_group .num {
+    margin-right: 46rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.section .main .total_group .part {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #333;
+}
+
+.section .main .total_group .price {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.section .main .total_group .price text {
+    font-size: 24rpx;
+    color: #FF2B2B;
+}
+
+.section .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 0 22rpx;
+}
+
+.section .control .status {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #5A387A;
+}
+
+.section .control .button_group {
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    font-weight: 500;
+}
+
+.section .control .button_group .secondary {
+    padding: 10rpx 48rpx;
+    margin-right: 20rpx;
+    color: #5A387A;
+    border: 2rpx solid #5A387A;
+    border-radius: 36rpx;
+}
+.section .control .button_group .primary {
+    padding: 10rpx 48rpx;
+    background: #5A387A;
+    color: #fff;
+    border: 2rpx solid #5A387A;
+    border-radius: 36rpx;
+}

@@ -1,0 +1,40 @@
+<Body title="购物车" short="{{ true }}" showIcon="{{ true }}">
+    <view class="edit" wx:if="{{false}}">
+        <image class="icon" src="/images_card_edit.png" />
+        <view class="text">编辑</view>
+    </view>
+    <block wx:if="{{false}}">
+    <checkbox-group class="container" bindchange="checkboxChange">
+        <label class="checkbox" wx:for="{{3}}">
+            <checkbox />
+            <goods source="cart" />
+        </label>
+    </checkbox-group>
+    </block>
+    <block wx:else>
+        <view class="vacancy">
+            <image class="vacancy_img" src="/images/no_cart.png" />
+            <view class="text">购物车里空空如也</view>
+            <view class="button">去逛逛</view>
+        </view>
+    </block>
+    <view class="footer_group" wx:if="{{false}}">
+        <checkbox-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <checkbox value="all" class="checkbox_group" />
+                <view class="text">全选</view>
+            </label>
+        </checkbox-group>
+        <view class="settlement" wx:if="{{true}}">
+            <view class="total">
+                <view class="text">总计：</view>
+                <view class="price">￥70.00</view>
+            </view>
+            <view class="button">去结算</view>
+        </view>
+        <view class="edit" wx:else>
+            <view class="secondary">取消订单</view>
+            <view class="primary">微信支付</view>
+        </view>
+    </view>
+</Body>

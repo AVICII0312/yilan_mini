@@ -1,0 +1,21 @@
+<import src="../../components/templates/divButton.wxml"></import>
+<Body title="修改手机号" short="{{ true }}" showIcon="{{ true }}">
+    <view class="container">
+        <view class="section">
+            <view class="name">原手机号</view>
+            <input type="text" class="input" data-info="name" bindinput="inputChange" />
+        </view>
+        <view class="section">
+            <view class="name">新手机号</view>
+            <input type="text" class="input" data-info="name" bindinput="inputChange" />
+        </view>
+        <view class="section">
+            <view class="name">验证码</view>
+            <input type="text" class="input" data-info="job" bindinput="inputChange" />
+            <view class="send">发送验证码</view>
+        </view>
+    </view>
+    <navigator class="button" hover-class="none">
+        <template is="divButtonGradient" data="{{ title: '确认并保存' }}"></template>
+    </navigator>
+</Body>

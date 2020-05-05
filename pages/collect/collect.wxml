@@ -1,0 +1,30 @@
+<import src="../../components/templates/goods.wxml"></import>
+
+<Body title="我的收藏" short="{{ true }}" showIcon="{{ true }}">
+    <view class="goods_group">
+        <view class="good">
+            <goods source="collect"></goods>
+        </view>
+        <view class="good">
+            <goods source="collect"></goods>
+        </view>
+        <view class="good">
+            <goods source="collect"></goods>
+        </view>
+    </view>
+    <!-- goods -->
+    <view class="goods">
+        <image class="goods-bg" src="/images/goods.png" />
+        <view class="goods-header">
+            <view class="block-title">你可能还喜欢</view>
+            
+        </view>
+        <view class="goods-list">
+            <!-- goods item -->
+            <template is="itemGoods"></template>
+            <template is="itemGoods"></template>
+            <template is="itemGoods"></template>
+            <template is="itemGoods"></template>
+        </view>
+    </view>
+</Body>

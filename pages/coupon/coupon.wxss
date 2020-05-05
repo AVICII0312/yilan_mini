@@ -1,0 +1,135 @@
+@import "../../components/templates/divButton.wxss";
+
+.section {
+    position: relative;
+    margin-bottom: 20rpx;
+}
+
+.section .bg .top {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 145rpx;
+    border-radius: 16rpx 16rpx 0 0;
+}
+
+.section .bg .top .left_top {
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(40rpx at left bottom, transparent 50%, #fff 50%);
+}
+
+.section .bg .top .right_top {
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(40rpx at right bottom, transparent 50%, #fff 50%);
+}
+
+.section .bg .bottom {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 66rpx;
+    border-radius: 0 0 16rpx 16rpx;
+}
+
+.section .bg .bottom .left_bottom {
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(40rpx at left top, transparent 50%, #fff 50%);
+}
+
+.section .bg .bottom .right_bottom {
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(40rpx at right top, transparent 50%, #fff 50%);
+}
+
+.section .content {
+    padding: 0 30rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.section .content .content_top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30rpx 0;
+}
+
+.section .content .content_top .title {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.section.overdue .content .title,
+.section.overdue .content .subtitle,
+.section.overdue .content .content_top .price,
+.section.overdue .content .content_top .price text,
+.section.overdue .content .time {
+    color: #ccc;
+}
+
+.section .content .content_top .subtitle {
+    margin-top: 14rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999;
+}
+.section .content .content_top .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.section .content .content_top .right .label{
+    width: 36rpx;
+    height: 36rpx;
+}
+.section .content .content_top .price {
+    font-size: 40rpx;
+    font-weight: 500;
+    color: #FF0000;
+}
+
+.section .content .content_top .price text {
+    font-size: 28rpx;
+    color: #FF2B2B;
+}
+
+.section .content .line {
+    width: 100%;
+    height: 2rpx;
+    background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+    background-size: 16rpx 2rpx;
+    background-repeat: repeat-x;
+}
+
+.section .content .content_bottom {
+    display: flex;
+    align-items: center;
+    padding: 14rpx;
+}
+
+.section .content .content_bottom .time {
+    font-size: 20rpx;
+    font-weight: 400;
+    color: #999;
+}
+
+.section .content .content_bottom .button {
+    margin-left: 20rpx;
+    padding: 6rpx 12rpx;
+    font-size: 16rpx;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(90, 56, 122, 0.2);
+    border-radius: 16rpx;
+
+}
