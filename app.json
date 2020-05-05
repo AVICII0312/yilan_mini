@@ -1,10 +1,14 @@
 {
   "pages": [
+    "pages/coupon/coupon",
+    "pages/cart/cart",
+    "pages/order/detail",
+    "pages/order/order",
+    "pages/account/phone",
     "pages/account/account",
     "pages/feedback/feedback",
     "pages/address/address",
     "pages/collect/collect",
-    "pages/coupon/coupon",
     "pages/mine/mine",
     "pages/inform/inform",
     "pages/index/index",
